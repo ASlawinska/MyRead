@@ -76,7 +76,8 @@ class App extends Component {
           chooseBooks={chooseBooks}
           move={this.move}
           choose={this.choose}
-          clearInput={this.clearInput}/>)}
+          clearInput={this.clearInput}/>
+          )}
         />
 
       </div>

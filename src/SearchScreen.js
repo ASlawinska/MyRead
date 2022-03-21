@@ -25,6 +25,13 @@ class SearchScreen extends Component {
             });
             return book;
         });
+        const result = () => {
+            if ( this.state.value.length > 0 && chooseBooks.length === 0){
+                console.log(chooseBooks)
+                return <h1>No results</h1>
+            }
+        }
+        
         return(
             <div className="search-books">
                 <div className="search-books-bar">
@@ -50,7 +57,7 @@ class SearchScreen extends Component {
                     />
                     ))}
                 </ol>
-                {this.state.value !== 0 && chooseBooks === [] && <h1>No results</h1>}
+                {result()}
             </div>
             </div>
         )
